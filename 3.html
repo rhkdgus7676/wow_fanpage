@@ -12,27 +12,67 @@
 </script>
 <title>aboutwow-database</title>
 <meta charset="utf-8"> <!--아래는 본문-->
+<style>
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr
+}
+  h3{
+    margin: 0;
+  }
+  h2{
+    border-bottom: 5px solid black;
+    margin: 0px;
+  }
+  ul{
+    border-right: 5px solid black;
+    padding: 0;
+    margin: 0;
+  }
+  #article{
+    border: 0;
+    padding: 10px;
+    margin: 0;
+  }
+  #grid #article {
+    padding-left: 30px
+  }
+    @media(max-width: 800px) {
+      #grid{
+        display:block;
+      }
+      ul{
+          border-right: none;
+      }
+      h2{
+        border-bottom: none;
+      }
+    }
+</style>
 </head>
 
 <body>
   <h1><strong><u>wow database</u></strong></h1>
-  <br><br><br>
+  <ul>
+    <li><a href="2.html" title="wow news" class="saw"><strong>NEWS</strong></a></li>
+    <li><a href="3.html" title="data base" class="saw" id="active"><strong>DATA BASE</strong></a></li>
+    <li><a href="4.html" title="add-ons"><strong>ADDONS</strong></a></li><br><br>
+  </ul>
   <h2>Classes</h2>
-  <br>
+
+<div id="grid">
   <ul>
     <li>HUNTER</li>
     <li>mage</li>
     <li>dark mage</li>
     <li>Ross the 'cat'</li>
   </ul>
-  <br>
-  <br>
-  <h3>HUNTER</h3>
-  <br>
-  <p>From an early age, the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become Hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.</p>
-  <img src="coding4.jpg" width="500"">
-  <br>
-  <br>
+  <div id="article">
+    <h3>HUNTER</h3>
+    <p>From an early age, the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become Hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.</p>
+      <img src="coding4.jpg" width="500"">
+  </div>
+</div>
 </body>
 </html>
 
