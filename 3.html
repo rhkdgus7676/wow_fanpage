@@ -3,7 +3,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169362920-1"></script>
-<script>
+<script src="colors.js">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -12,7 +12,8 @@
 </script>
 <title>aboutwow-database</title>
 <meta charset="utf-8"> <!--아래는 본문-->
-<style>
+<link rel="stylesheet" href="style.css">
+<!-- <style>
 #grid{
   display: grid;
   grid-template-columns: 150px 1fr
@@ -48,11 +49,14 @@
         border-bottom: none;
       }
     }
-</style>
+</style> -->
 </head>
 
 <body>
   <h1><strong><u>wow database</u></strong></h1>
+  <input id="dealer_tanker" type="button" value="dealer" onclick="
+  dealertankerhandler(this);
+  ">
   <ul>
     <li><a href="2.html" title="wow news" class="saw"><strong>NEWS</strong></a></li>
     <li><a href="3.html" title="data base" class="saw" id="active"><strong>DATA BASE</strong></a></li>
@@ -61,12 +65,14 @@
   <h2>Classes</h2>
 
 <div id="grid">
-  <ul>
-    <li>HUNTER</li>
-    <li>mage</li>
-    <li>dark mage</li>
-    <li>Ross the 'cat'</li>
-  </ul>
+  <div id="navi">
+    <ul>
+      <li>HUNTER</li>
+      <li>mage</li>
+      <li>dark mage</li>
+      <li>Ross the 'cat'</li>
+    </ul>
+  </div>
   <div id="article">
     <h3>HUNTER</h3>
     <p>From an early age, the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become Hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.</p>

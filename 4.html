@@ -3,7 +3,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169362920-1"></script>
-<script>
+<script src="colors.js">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -12,34 +12,16 @@
 </script>
 <title>aboutwow-addons</title>
 <meta charset="utf-8"> <!--아래는 본문-->
-<style media="screen">
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    border-top: 5px solid black;
-  }
-  #navi{
-    border-right: 5px solid black;
-  }
-  #article{
-    padding-left: 30px;
-  }
-  @media (max-width: 800px) {
-    #grid{
-      display:block;
-      border-top: none;
-    }
-    #navi{
-      border-right: none;
-    }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <br>
 <br>
 <br>
 <body>
   <h1><strong>wow addons</strong></h1>
+  <input id="dealer_tanker" type="button" value="dealer" onclick="
+  dealertankerhandler(this);
+  ">
 <div id="grid">
   <div id="navi">
   <ul>
